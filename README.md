@@ -17,7 +17,7 @@ pip install -r requirements.txt
 2) Load youtube-dl:
 ```
 wget  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-chmod a+rx youtube-dl
+chmod a+rx  /usr/local/bin/youtube-dl
 ```
 
 3) Run script to download videos, there are 2 formats that can be used for storing videos one is .mp4 and another is folder with .png images. While .png images occupy significantly more space, the format is loss-less and have better i/o performance when training.
