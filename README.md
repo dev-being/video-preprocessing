@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 2) Load youtube-dl:
 ```
-wget https://yt-dl.org/downloads/latest/youtube-dl -O youtube-dl
+wget  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 chmod a+rx youtube-dl
 ```
 
