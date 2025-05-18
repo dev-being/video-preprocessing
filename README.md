@@ -16,15 +16,15 @@ pip install -r requirements.txt
 
 2) Load youtube-dl:
 ```
-wget  sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-chmod a+rx  /usr/local/bin/youtube-dl
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+chmod a+rx  /usr/local/bin/yt-dlp
 ```
 
 3) Run script to download videos, there are 2 formats that can be used for storing videos one is .mp4 and another is folder with .png images. While .png images occupy significantly more space, the format is loss-less and have better i/o performance when training.
 
 **Taichi**
 ```
-python load_videos.py --metadata taichi-metadata.csv --format .mp4 --out_folder taichi --workers 8
+python load_videos.py --metadata vox-metadata.csv --format .mp4 --out_folder vox --workers 8 --youtube /usr/local/bin/yt-dlp 
 ```
 select number of workers based on number of cpu avaliable. Note .png format take aproximatly 80GB.
 
